@@ -9,3 +9,5 @@ It is important to handle errors for each individual API call becuase each API c
 Using custom error classes like Network Error and DataError improves debugging and error identification by allowing you to spot what type of error occured. Custom classes also improve debugging by allowing you to use "instanceof" checks to handle each type differently, and also allows you to categorize your failures.
 
 3. When might a retry mechanism be more effective than an immediate failure response?
+
+A retry mechanism can be more effective than an immediate failure response when the error is temporary. Some examples of temporary errors would be Server overloads (or slow server responses), momentary network timeouts, or unstable API endpoints.
